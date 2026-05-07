@@ -56,4 +56,46 @@ box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 width: 100%;
 height: 320px;
 object-fit: cover;
-border-bottom: 2px
+border-bottom: 2px solid #eee;
+}
+.book-card .info { padding: 1rem; flex-grow: 1; display: flex; flex-direction: columns; }
+.book-card h2 { font-size: 1.25rem; margin-bottom: 0.4rem; color: var(--accent); }
+.book-card .author { font-style: italic; color: #666; margin-bottom: 0.6rem; }
+.book-card .desc { font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1; }
+.read-btn {
+display: block;
+text-align: center;
+background: var(--accent);
+color: #fff;
+padding: 0.75rem;
+text-decoration: none;
+font-weight: bold;
+border-radius: 0 0 var(--radius) var(--radius);
+transition: background 0.2s;
+}
+.read-btn:hover { background: #6b3410; }
+
+footer {
+text-align: center;
+padding: 1.5rem;
+background: #e8e4d9;
+margin-top: 3rem;
+font-size: 0.9rem;
+border-top: 2px solid #ccc;
+}
+@media (max-width: 600px) {
+.library-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+header { padding: 1.5rem 1rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>My books</h1>
+<p>A list of my published books</p>
+</header>
+
+<main>
+<div class="library-grid>
+<article class="bookcard">
+<img src="https://placehold.co/300x400/8b4513/ffffff?text=Book+Cover" alt="Galaxies">
