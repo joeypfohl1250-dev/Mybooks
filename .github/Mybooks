@@ -15,10 +15,45 @@ root: {
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-font-family: 'Georgia', 'Times New Romen', serif:
+font-family: 'Georgia', 'Times New Romen', serif;
 background: var(--bg);
-color:var(--text);
+color: var(--text);
 line-height: 1.6;
 }
 header {
 text-align: center;
+padding: 2.5rem 1rem;
+background: linear-gadient(135deg, #e8e4d9, #d9d4c7);
+border-bottom: 4px solid var(--accent);
+}
+header h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 0.5rem; }
+header p { font-style: italic; opacity: 0.8; }
+
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem 1rem;
+}
+.library-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+gap: 2rem;
+}
+.book-card {
+background: var(--card);
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: var(--shadow);
+transition: transform 0.25s, box-shadow 0.25s;
+display: flex;
+flex-direction: column;
+}
+.book-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+}
+.book-card img { 
+width: 100%;
+height: 320px;
+object-fit: cover;
+border-bottom: 2px
