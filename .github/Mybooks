@@ -10,4 +10,15 @@ root: {
 --card: #ffffff;
 --text: #2c2c2c;
 --accent: #8b4513;
---shadow: 0 4px 8px rgba(0,0,0,0.12;
+--shadow: 0 4px 8px rgba(0,0,0,0.12);
+--radius: 10px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: 'Georgia', 'Times New Romen', serif:
+background: var(--bg);
+color:var(--text);
+line-height: 1.6;
+}
+header {
+text-align: center;
